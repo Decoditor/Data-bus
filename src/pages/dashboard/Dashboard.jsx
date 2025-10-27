@@ -55,9 +55,7 @@ function Dashboard() {
                 className="h-36 cursor-pointer hover:scale-105 transition-all duration-400"
               >
                 <CardContent className="flex flex-col justify-between h-full">
-                  <p className="text-xl text-primary font-semibold">
-                    {item.name}
-                  </p>
+                  <p className="text-xl font-semibold">{item.name}</p>
 
                   <div className=" flex items-center scale-105">
                     {Array.from({ length: 4 }, (_, i) => (

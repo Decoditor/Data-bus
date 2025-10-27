@@ -34,7 +34,7 @@ export const history = [
     id: 4,
   },
   {
-    name: "Data Purchase",
+    name: "Deposit",
     service: "Deposit",
     // img: <User />,
     amount: 10000,
