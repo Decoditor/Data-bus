@@ -3,7 +3,7 @@ import { Button } from "../../components/ui/button";
 
 function AgentAds() {
   return (
-    <div className="bg-linear-to-br from-blue-900/90 to-blue-500/70 h-72 rounded-3xl p-8 grid grid-cols-2">
+    <div className="bg-linear-to-br from-blue-900/90 relative to-blue-500/70 h-72 rounded-3xl p-8 grid grid-cols-2">
       <div className="text-gray-200 grid">
         <p className=" text-4xl font-bold">Want Cheaper Services?</p>
         <p className="text-xl text-gray-300">
@@ -17,6 +17,10 @@ function AgentAds() {
         >
           Become an Agent
         </Button>
+      </div>
+
+      <div className="h-full">
+        <img src="agent.png" alt="" className="absolute bottom-0" />
       </div>
     </div>
   );
