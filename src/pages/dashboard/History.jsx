@@ -1,11 +1,17 @@
 import React from "react";
-import { Card, CardContent, CardHeader } from "../../components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+} from "../../components/ui/card";
 import { history } from "../../../data";
 import { User } from "lucide-react";
+import { Button } from "../../components/ui/button";
 
 function History() {
   return (
-    <div className="h-full grid gap-5">
+    <div className="h-fit grid gap-5">
       <h2 className="text-3xl font-semibold text-primary">
         Transaction History
       </h2>
@@ -30,17 +36,28 @@ function History() {
                   </div>
                 </div>
 
-                <p
-                  className={`grid text-right font-semibold ${
-                    item.service == "Deposit" ? "text-green-500" : "black"
-                  }`}
-                >
-                  {item.service == "Deposit" ? "+" : "-"} &#8358; {item.amount}{" "}
-                </p>
+                <div className="grid text-right">
+                  <p
+                    className={`font-semibold ${
+                      item.service == "Deposit" ? "text-green-500" : "black"
+                    }`}
+                  >
+                    {item.service == "Deposit" ? "+" : "-"} &#8358;{" "}
+                    {item.amount}{" "}
+                  </p>
+
+                  <p className="text-xs text-black/40">{item.time}</p>
+                </div>
               </div>
             ))}
           </div>
         </CardContent>
+
+        <CardFooter className="p-0">
+          <Button className="w-full" size="lg">
+            All Transactions
+          </Button>
+        </CardFooter>
       </Card>
     </div>
   );

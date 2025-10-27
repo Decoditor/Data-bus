@@ -15,9 +15,9 @@ function Header() {
             <li className="cursor-pointer hover:text-blue-700 text-blue-700 bg-accent px-4 py-3 rounded-lg hover:bg-accent">
               Dashboard
             </li>
-            <li className="cursor-pointer hover:text-blue-700 px-4 py-3 rounded-lg hover:bg-accent">
+            {/* <li className="cursor-pointer hover:text-blue-700 px-4 py-3 rounded-lg hover:bg-accent">
               Payments
-            </li>
+            </li> */}
             <li className="cursor-pointer hover:text-blue-700 px-4 py-3 rounded-lg hover:bg-accent">
               Data Bundles
             </li>
